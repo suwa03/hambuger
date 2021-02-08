@@ -1,0 +1,27 @@
+.c-card__TakeOut,
+.c-card__EatIn {
+  background-position: center;
+  background-size: cover;
+  background-color: #fff;
+  margin: 20px;
+  padding-bottom: 10px;
+
+  @include breakpoint (tablet) {
+    margin: 40px;
+  }
+
+}
+
+.c-card {
+  &__TakeOut {
+    background-image: url(/img/frontpage_card1.jpg);
+  }
+
+  &__EatIn {
+    background-image: url(/img/frontpage_card2.jpg);
+
+    @include breakpoint (tablet) {
+      margin-left: 0;
+    }
+  }
+}
