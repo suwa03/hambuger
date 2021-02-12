@@ -1,0 +1,33 @@
+.u-pt200 {
+  padding-top: 200px;
+}
+
+.u-pl10 {
+  padding-left: 10px;
+}
+
+.u-pl0 {
+  padding-left: 0px;
+}
+
+.u-pr70 {
+  padding-right: 70px;
+}
+
+.u-pl60 {
+  @include breakpoint (pc) {
+    padding-left: 60px;
+  }
+}
+
+.u-pr10 {
+  padding-right: 10px;
+}
+
+.u-pt35 {
+  padding-top: 35px;
+}
+
+.u-pl20 {
+  padding-left: 20px;
+}

@@ -1,0 +1,61 @@
+.l-maintop {
+
+  &__img {
+    background-image: url(/img/frontpage_image.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 285px;
+  }
+
+}
+
+.js-fade-layer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  visibility: hidden;
+  z-index: 10;
+}
+
+.l-main__container {
+  width: 90%;
+  margin: auto;
+
+  & pre {
+    background-color: #F5F5F5;
+    font-size: 1.6rem;
+    padding: 50px;
+    margin-bottom: 30px;
+
+    @include breakpoint ( tablet ) {
+      margin-bottom: 60px;
+    }
+  }
+
+   & table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+
+    @include breakpoint ( tablet ) {
+      margin-bottom: 60px;
+    }
+
+  }
+
+  & td {
+    font-weight: initial;
+    font-size: 1.6rem;
+    border: 1px solid #707070;
+    height: 80px;
+    padding-left: 30px;
+    &:first-child {
+      width: 40%;
+    }
+  }
+
+}

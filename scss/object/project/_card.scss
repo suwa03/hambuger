@@ -1,0 +1,50 @@
+.p-card__TakeOut,
+.p-card__EatIn {
+  background-position: center;
+  background-size: cover;
+  background-color: #fff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.p-card {
+  &__TakeOut {
+    background-image: url(/img/frontpage_card1.jpg);
+  }
+
+  &__EatIn {
+    background-image: url(/img/frontpage_card2.jpg);
+
+    @include breakpoint (tablet) {
+      margin-left: 40px;
+    }
+
+    @include breakpoint ( pc ) {
+      margin-left: 80px;
+    }
+  }
+
+  &__archive {
+    margin-bottom: 20px;
+
+    @include breakpoint ( tablet ) {
+      display: flex;
+    }
+    
+    @include breakpoint ( pc ) {
+      margin-bottom: 30px;
+    }
+
+    & img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      
+      
+      @include breakpoint ( tablet ) {
+        width: 50%;
+        height: initial;
+      }
+    }
+  }
+}

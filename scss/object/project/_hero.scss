@@ -1,0 +1,95 @@
+.p-hero {
+
+  &__front {
+    background-image: url(/img/frontpage_image.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 285px;
+    margin-bottom: 20px;
+
+    @include breakpoint ( tablet ) {
+      margin-bottom: 40px;
+    }
+
+    @include breakpoint ( pc ) {
+      margin-bottom: 120px;
+    }
+  }
+
+  &__archive {
+    background-image: url(/img/archiveTop_image.jpg);
+    background-position: center;
+    background-size: 200%;
+    width: 100%;
+    height: 285px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 35px;
+
+    @include breakpoint ( tablet ) {
+      margin-bottom: 65px;
+    }
+
+    @include breakpoint ( pc ) {
+      height: 240px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba( 0, 0, 0, 0.5);
+      z-index: -1;
+    }
+
+    & p {
+      font-size: 1.6rem;
+
+      @include breakpoint ( tablet ) {
+        margin-left: 20px;
+      }
+      
+    }
+  }
+  
+  &__single {
+    width: 100%;
+    height: 225px;
+    background-image: url(/img/singlepage_ham-burger-with-vegetables.jpg);
+    background-position: center;
+    background-size: auto;
+    margin-bottom: 35px;
+    
+    @include breakpoint ( tablet ) {
+      height: 500px;
+      margin-bottom: 45px;;
+    }
+    
+    @include breakpoint ( pc ) {
+      margin-bottom: 65px;
+    }
+  }
+  
+  &__page {
+    width: 100%;
+    height: 225px;
+    background-image: url(/img/page_black-steel-lamp-post.jpg);
+    background-position: center;
+    background-size: cover; 
+    margin-bottom: 35px;
+
+    @include breakpoint ( tablet ) {
+      height: 500px;
+      margin-bottom: 45px;
+    }
+
+    @include breakpoint ( pc ) {
+      margin-bottom: 65px;
+    }
+  }
+
+}

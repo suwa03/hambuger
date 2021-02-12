@@ -1,0 +1,40 @@
+.p-box {
+  &__content {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0 10px 10px;
+
+    @include breakpoint ( pc ) {
+      margin: 0 20px 20px;
+    }
+    & dd {
+      font-size: 1.6rem;
+      margin-left: 10px;
+    }
+  }
+
+  &__title {
+    font-size: 2.2rem;
+    font-weight: initial;
+    padding-top: 24px;
+    margin-left: 10px;
+    margin-bottom: 24px;
+
+    @include breakpoint (tablet) {
+      font-size: 2.4rem;
+    }
+  }
+
+  &__block {
+    color: #fff;
+    z-index: 10;
+   padding-top: 100px;
+   padding-left: 40px;
+
+   @include breakpoint ( tablet ) {
+     display: flex;
+     align-items: center;
+     padding-top: 80px;
+     padding-left: 80px;
+   }
+  }
+}

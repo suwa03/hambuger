@@ -1,0 +1,46 @@
+.l-footer {
+  background-image: url(/img/footer_image.jpg);
+  height: 150px;
+  color: #fff;
+  font-weight: initial;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    width: 235px;
+    height: 100%;
+
+    & div {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    & a {
+      text-decoration: none;
+      font-size: 1.6rem;
+      color: #fff;
+    }
+
+    a+a {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        background: #fff;
+        top: 2px;
+        left: -15px;
+        width: 1px;
+        height: 20px;
+      }
+    }
+  }
+
+  small {
+    font-size: 1.4rem;
+  }
+
+}

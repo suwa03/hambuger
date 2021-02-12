@@ -1,0 +1,7 @@
+.u-mbfront__card {
+  margin-bottom: 40px;
+
+  @include breakpoint ( pc ) {
+    margin-bottom: 80px;
+  }
+}
