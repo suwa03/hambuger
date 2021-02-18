@@ -1,0 +1,9 @@
+.u-sidebar {
+  padding-top: 200px;
+  padding-left: 40px;
+
+  @include breakpoint (pc) {
+    padding-left: 60px;
+    padding-top: 60px;
+  }
+}

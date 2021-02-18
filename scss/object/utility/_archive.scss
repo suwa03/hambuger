@@ -1,0 +1,11 @@
+.u-mbarchive__card {
+  margin-bottom: 60px;
+
+  @include breakpoint ( tablet ) {
+    margin-bottom: 105px;
+  }
+
+  @include breakpoint ( pc ) {
+    margin-bottom: 150px;
+  }
+}

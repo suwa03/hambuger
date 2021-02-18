@@ -1,0 +1,7 @@
+.u-mtsingle {
+  margin-top: 35px;
+
+  @include breakpoint ( tablet ) {
+    margin-top: 65px;
+  }
+}

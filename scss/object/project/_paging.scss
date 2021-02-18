@@ -1,0 +1,57 @@
+.p-paging {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+  color: #707070;
+  margin-bottom: 30px;
+
+  @include breakpoint ( tablet ) {
+   justify-content: center;
+  }
+
+  @include breakpoint ( pc ) {
+    margin-bottom: 65px;
+  }
+  
+  & ul {
+    display: flex;
+    margin-right: 15px;
+    
+  }
+  
+  & li {
+    display: none;
+    border: solid 2px #707070;
+    padding: 7px 13px;
+    margin-left: 15px;
+
+
+    @include breakpoint ( tablet ) {
+      display: block;
+    }
+  }
+}
+
+.p-paging__number {
+  display: none;
+  font-weight: bold;
+  margin-right: 15px;
+
+  @include breakpoint ( tablet ) {
+    display: block;
+  }
+
+}
+
+.p-paging__sp {
+  
+  @include breakpoint ( tablet ) {
+    display: none;
+  }
+}
+
+.p-paging .first-child {
+  color: #fff;
+  background-color: #3C2B1C;
+}

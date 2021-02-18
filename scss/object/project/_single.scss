@@ -1,0 +1,106 @@
+.p-single {
+  color: #3C2A10;
+
+  & p {
+    font-size: 1.6rem;
+    margin-top: 30px;
+
+    @include breakpoint ( tablet ) {
+      margin-top: 60px;
+    }
+  }
+
+  &__caption {
+    font-size: 2.4rem;
+    font-weight: initial;
+  }
+
+  &__captions {
+    font-size: 2.0rem;
+    font-weight: initial;
+  }
+
+  &__container {
+    background-color: #F5F5F5;
+    font-size: 1.6rem;
+    font-weight: initial;
+    padding: 30px 20px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+
+    & p {
+      padding-bottom: 30px;
+    }
+
+    & a {
+      color: #4A6C9B;
+      border-bottom: solid 1px #4A6C9B;
+    }
+  }
+
+  &__contents {
+    display: flex;
+    margin: 30px 0;
+
+    & img {
+      height: 90px;
+      width: 40%;
+    }
+
+    & p {
+      color: #3C2A10;
+      font-size: 1.6rem;
+      display: -webkit-box;
+      overflow: hidden;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+    }
+  }
+}
+
+.reverse {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding-left: 0px;
+}
+
+.p-single__hamburger {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 30px;
+
+  
+  &__list {
+    width: 100%;
+    margin-bottom: 30px;
+
+    
+    @include breakpoint ( tablet ) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 60px;
+      
+    }
+    & img {
+      margin-bottom: 20px;
+      width: 100%;
+      
+      @include breakpoint ( tablet ) {
+        width: 49%;
+      }
+
+      @include breakpoint ( pc ) {
+        width: 33%;
+      }
+    }
+  }
+}
+
+.p-single__list {
+  color: #3C2A10;
+  font-size: 1.6rem;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 60px;
+}

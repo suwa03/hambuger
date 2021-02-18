@@ -1,0 +1,141 @@
+.p-title {
+  &__main {
+    font-size: 3.6rem;
+    color: #fff;
+    /* font-family: 'M+ 1m'; */
+    padding-top: 125px;
+    padding-left: 25px;
+
+    @include breakpoint (tablet) {
+      padding-left: 86px;
+    }
+
+    @include breakpoint (pc) {
+      font-size: 4.0rem;
+    }
+  }
+
+  &__TakeOut {
+    font-size: 4.1rem;
+    color: #EAEAEA;
+    margin-left: 10px;
+    position: relative;
+    margin-bottom: 230px;
+
+    @include breakpoint (tablet) {
+      font-size: 4.4rem;
+    }
+
+    @include breakpoint (pc) {
+      font-size: 8.0rem;
+      margin-left: 20px;
+    }
+  }
+
+  &__EatIn {
+    font-size: 4.1rem;
+    color: #EAEAEA;
+    margin-left: 10px;
+    position: relative;
+    margin-bottom: 230px;
+
+    @include breakpoint (tablet) {
+      font-size: 4.4rem;
+    }
+
+    @include breakpoint (pc) {
+      font-size: 8.0rem;
+      margin-left: 20px;
+    }
+  }
+
+  &__TakeOut::after {
+    content: "";
+    height: 5px;
+    width: 33px;
+    position: absolute;
+    background: #fff;
+    left: 0;
+    top: 86px;
+
+    @include breakpoint (pc) {
+      width: 65px;
+      top: 160px;
+    }
+  }
+
+  &__EatIn::after {
+    content: "";
+    height: 5px;
+    width: 33px;
+    position: absolute;
+    background: #fff;
+    left: 0;
+    top: 86px;
+
+    @include breakpoint (pc) {
+      width: 65px;
+      top: 160px;
+    }
+  }
+
+  &__map {
+    font-size: 3.0rem;
+    font-weight: initial;
+    position: relative;
+    margin-bottom: 50px;
+    color: #fff;
+
+    &::after {
+      content: "";
+      height: 3px;
+      width: 75px;
+      position: absolute;
+      background: #fff;
+      left: 0;
+      top: 70px;
+    }
+  }
+
+  &__sidebar {
+    font-size: 2.4rem;
+    font-weight: initial;
+  }
+  
+  &__archive {
+    font-size: 3.6rem;
+    color: #fff;
+
+    @include breakpoint ( tablet ) {
+      font-size: 6.0rem;
+    }
+
+    &p {
+      font-size: 1.6rem;
+    }
+ 
+  }
+
+  &__menu {
+    font-size: 2.8rem;
+    font-weight: initial;
+
+    @include breakpoint ( tablet ) {
+      font-size: 3.6rem;
+    }
+  }
+
+  &__single {
+    font-size: 3.6rem;
+    font-weight: initial;
+    color: #fff;
+    padding-left: 25px;
+    padding-top: 90px;
+
+    @include breakpoint ( tablet ) {
+      font-size: 6.0rem;
+      padding-left: 85px;
+      padding-top: 220px;
+    } 
+  }
+}
